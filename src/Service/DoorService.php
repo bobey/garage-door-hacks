@@ -12,6 +12,6 @@ class DoorService
         $initGpioProcess->run();
 
         $openCommandProcess = new Process('gpio write 0 1 && sleep 3 && gpio write 0 0');
-        $openCommandProcess->start();
+        $openCommandProcess->run();
     }
 }
